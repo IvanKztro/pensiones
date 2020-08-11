@@ -1,0 +1,138 @@
+body{
+    
+   
+}
+._navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1200;
+    background-color: #00bcd4;
+    color: #fefeff;
+
+    
+}
+._navbar > div{
+    display: grid;
+    /* background-color: #1b262c;
+    color: #bbe1fa; */
+    height: 4rem;
+    grid-template-columns: 1fr 2fr;
+}
+
+.nav-der{
+ display: flex;
+ flex-direction: row-reverse;
+ /* background-color: blue; */
+ width: 100%;
+ max-height: 90%;
+ grid-template-columns: auto;
+ align-items: center;
+}
+.nav-der > li{
+    padding-right: 1.5rem;
+    list-style: none;
+}
+
+.nav-der > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    
+}
+.nav-der > li > a:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+.nav-izq{
+    /* background-color: crimson; */
+    display: flex;
+    width: 100%;
+    max-height: 90%;
+    align-items: center!important;
+}
+
+.show{
+    animation-name: show;
+    animation-duration: .5s;
+}
+
+.hidden{
+    animation-name: hidden;
+    animation-duration: 2s;
+}
+
+
+@keyframes hidden{
+    from{  top: 0px}
+    to{  top: -100px}
+}
+
+@keyframes show{
+    from{  top: -40px}
+    to{  top: 0px}
+}
+
+.pension_problemas{
+    text-align: center;
+    font-size: 20px;
+    align-items: center;
+}
+/* 
+.contenedor_img_problemas > img
+{
+    justify-content: center;
+} */
+.img_problemas > img
+{
+    width: 100%;
+    border-radius: 15px;
+}
+.btn_tramitar{
+    display: block;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    border: 1px solid #d1d1d1;
+    border-radius: 7px;
+    padding: .4rem 6rem;
+    margin: 2rem auto; 
+    text-align: center;
+    box-shadow: 0px 0px 17px #e1e1e1;
+}
+.btn_tramitar:hover{
+    background-color:  #d8d8d8;
+    
+}
+
+
+@media (max-width: 768px) { 
+
+    .primerSeccion{
+        flex-direction: column;
+    }
+    .img_problemas > img
+    {
+        width: 100%;
+        border-radius: 15px;
+    }
+    .pension_problemas{
+        font-size: 15px;
+    }
+    .h1Problemas{
+        margin-top: 2rem ;
+        font-size: 27px;
+    }
+ }
+
+
+/* .container{
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+} */
+
