@@ -38,7 +38,7 @@ body{
 .nav-der > li > a{
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     
 }
 .nav-der > li > a:hover{
@@ -106,27 +106,52 @@ body{
 .btn_tramitar:hover{
     background-color:  #d8d8d8;
     
+    
+}
+
+.btn_info{
+    display: block;
+    border: 1px solid #d1d1d1;
+    background-color: #5fdde5;
+    border-radius: 7px;
 }
 
 
-@media (max-width: 768px) { 
 
-    .primerSeccion{
-        flex-direction: column;
-    }
-    .img_problemas > img
-    {
-        width: 100%;
-        border-radius: 15px;
-    }
-    .pension_problemas{
-        font-size: 15px;
-    }
-    .h1Problemas{
-        margin-top: 2rem ;
-        font-size: 27px;
-    }
- }
+
+ .detalles > img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 0px 0px 15px #616060;
+    background-color: red ;
+}
+
+.info{
+    position: absolute;
+    top: 35px;
+    border-radius: 15px;
+    background-color: #000000a6;
+    height: 81%;
+    width: 93%;
+    opacity: 0;
+    text-align: center;
+    /* padding: 50px 10px; */
+
+}
+.info:hover{
+    opacity: 1;
+    color: white;
+    animation-name: desp;
+    animation-duration: 1s;
+}
+
+@keyframes desp{
+    from{opacity: 0;}
+    to{ opacity: 1;}
+}
 
 
 /* .container{
@@ -136,3 +161,34 @@ body{
 
 } */
 
+@media (max-width: 768px) { 
+
+    .primerSeccion{
+        flex-direction: column;
+    }
+    .img_problemas > img
+    {
+        max-width: 100%;
+        border-radius: 15px;
+    }
+    .pension_problemas{
+        font-size: 15px;
+    }
+    .h1Problemas{
+        margin-top: 2rem ;
+        font-size: 27px;
+    }
+
+    .info{
+        position: absolute;
+        top: 35px;
+        border-radius: 15px;
+        background-color: #000000a6;
+        height: 75%;
+        width: 90%; 
+        opacity: 0;
+        text-align: center;
+        
+    
+    }
+ }
